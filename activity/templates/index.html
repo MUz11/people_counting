@@ -5,26 +5,29 @@
 <head>
     <meta charset="UTF-8">
     <title>counting</title>
-    <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand">Human Counting</a>
-</nav>
+
 </head>
 <body>
-
+    <nav class="navbar navbar-dark bg-dark" >
+  <a class="navbar-brand">Human Counting</a>
+</nav>
+    <br>
+    <div class="d-flex p-5 justify-content-center">
 {% for building in data %}
-    <div class="card" style="width: 18rem;">
+    <div class="card m-5 bg-secondary" style="width: 18rem;">
         <div class="card-body">
-            <h5 class="card-title">{{ building.location }}</h5>
-            <p class="card-text">
-                {{ building.human_in }}
+            <h5 class="card-title text-white"> ตึก :{{ building.location }}</h5>
+            <p class="card-text text-white">
+               จำนวนคนที่เข้าทั้งหมด : {{ building.human_in }}
             </p>
-            <p class="card-text">
-                {{ building.human_out }}
+            <p class="card-text text-white">
+               จำนวนคนที่ออกทั้งหมด :  {{ building.human_out }}
             </p>
 
         </div>
     </div>
 
 {% endfor %}
+    </div>
 </body>
 </html>
