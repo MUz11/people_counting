@@ -5,7 +5,9 @@ from rest_framework import serializers
 class countSerializer(serializers.ModelSerializer):
      class Meta:
          model = counting
-         fields = ['location',
+         fields = [
+             'id',
+             'location',
                    'time',
                    'human_in',
                    'human_out']
