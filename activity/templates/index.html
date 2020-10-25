@@ -7,14 +7,14 @@
     <title>counting</title>
 
 </head>
-<body  style="background-color:#E0E0E0;">
+<body>
     <nav class="navbar navbar-dark bg-dark" >
   <a class="navbar-brand">Human Counting</a>
 </nav>
     <br>
     <div class="d-flex p-5 justify-content-center">
 {% for building in data %}
-    <div class="card m-5 bg-dark mb-3"style="width: 18rem;">
+    <div class="card m-5 bg-secondary" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title text-white "> ตึก :{{ building.location }}</h5>
             <p class="card-text text-white">
